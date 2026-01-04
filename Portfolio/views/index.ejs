@@ -1,0 +1,185 @@
+<%- include('partials/header') %>
+
+<body class="bg-gray-900 text-white font-sans">
+  <div class="p-4 md:p-8">
+    <!-- Header -->
+    <header class="flex justify-between items-center mb-8">
+      <div class="flex items-center space-x-4">
+        <img src="/images/pfp.jpg" alt="Apurva Patel" class="w-12 h-12 rounded-full">
+        <div>
+          <h1 class="text-xl font-bold">Apurva Patel</h1>
+          <p class="text-gray-400">Cybersecurity Analyst</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Grid -->
+    <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+
+      <!-- Time -->
+      <div class="lg:col-span-1 bg-gray-800 p-6 rounded-lg flex flex-col">
+        <div class="flex justify-between items-baseline">
+          <h2 class="text-lg font-bold text-white">Time</h2>
+          <p class="text-lg text-gray-400">Charlotte, NC</p>
+        </div>
+        <hr class="border-gray-700 my-4">
+        <div class="flex-grow grid place-items-center">
+          <div class="time-container">
+            <div class="analog-clock">
+              <div class="hand hour-hand"></div>
+              <div class="hand minute-hand"></div>
+              <div class="hand second-hand"></div>
+              <div class="center-dot"></div>
+            </div>
+            <div id="digital-clock" class="text-lg"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mode -->
+      <div class="lg:col-span-1 bg-gray-800 p-6 rounded-lg flex flex-col justify-between">
+        <div>
+          <h2 class="text-gray-400">Mode</h2>
+          <p class="mt-4">Looking for my next adventure in cybersecurity. Got leads? Hit me up! 🔐✨</p>
+        </div>
+        <div class="mt-6 flex justify-center">
+          <a href="mailto:iamapurvapatel@outlook.com" class="bg-gray-700 py-3 px-6 rounded-lg hover:bg-gray-600 transition">Contact Me</a>
+        </div>
+      </div>
+
+      <!-- About -->
+      <div class="lg:col-span-2 bg-gray-800 p-6 rounded-lg">
+        <h2 class="text-gray-400">About</h2>
+        <p class="mt-4 text-lg">
+          🚀 Cybersecurity professional with experience in IT support, identity & access management (Okta, Active Directory, MFA), and incident response. Skilled in troubleshooting, threat detection, and using tools like Splunk, Kibana, ServiceNow, VPNs, and IDS/IPS. Proficient in PowerShell and Python for automation. Achievements include cutting escalations by 30%, resolving incidents within 5–7 minutes, and improving compliance through AD audits. Currently pursuing CompTIA CySa+ to advance expertise in security analytics, with a passion for IAM, automation, and frameworks like MITRE ATT&CK and Zero Trust.
+        </p>
+      </div>
+
+      <!-- Projects -->
+      <div class="lg:col-span-2 bg-gray-800 p-6 rounded-lg">
+        <h2 class="text-gray-400 mb-4">Projects</h2>
+        <div class="space-y-4">
+          <div class="flex items-center space-x-4">
+            <div class="bg-gray-700 w-16 h-16 rounded-lg flex-shrink-0">
+                <!-- Placeholder for project image -->
+            </div>
+            <div>
+              <h3 class="font-bold">IAM Automation Script</h3>
+              <p class="text-gray-400">Developed a Python script to automate user provisioning and de-provisioning, integrating with Active Directory and Okta APIs.</p>
+            </div>
+          </div>
+          <div class="flex items-center space-x-4">
+            <div class="bg-gray-700 w-16 h-16 rounded-lg flex-shrink-0">
+                <!-- Placeholder for project image -->
+            </div>
+            <div>
+              <h3 class="font-bold">Home Lab Security Dashboard</h3>
+              <p class="text-gray-400">Built a real-time security dashboard using Splunk and Kibana to monitor network traffic from various sources (IDS/IPS, firewalls).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Get in touch -->
+      <div class="lg:col-span-1 bg-gray-800 p-6 rounded-lg relative">
+        <h2 class="absolute top-6 left-6 text-gray-400">Get in touch</h2>
+        <div class="h-full flex items-center justify-center">
+          <a href="https://www.linkedin.com/in/iamapurvapatel" class="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center font-bold hover:bg-gray-600 transition">in</a>
+        </div>
+      </div>
+      
+      <%# <!-- Central Visual -->
+      <div class="lg:col-span-1 bg-gray-800 p-6 rounded-lg flex items-center justify-center min-h-[200px]">
+          <div class="w-32 h-56 bg-black rounded-3xl border-4 border-gray-700 flex flex-col justify-between p-2">
+            <div></div>
+            <p class="text-center text-5xl font-bold text-gray-400">099</p>
+            <div></div>
+          </div>
+      </div> %>
+
+      <!-- Experience & Education -->
+      <div class="lg:col-span-2 bg-gray-800 p-6 rounded-lg">
+        <h2 class="text-gray-400 mb-4">Experience & Education</h2>
+        <div class="space-y-4 text-sm">
+          <div class="flex justify-between">
+            <p>2022 &mdash; Now</p>
+            <div class="text-right">
+              <h3 class="font-bold">Cybersecurity Analyst</h3>
+              <p class="text-gray-400">Global Tech Inc.</p>
+            </div>
+          </div>
+          <div class="flex justify-between">
+            <p>2020 &mdash; 2022</p>
+            <div class="text-right">
+              <h3 class="font-bold">IT Support Specialist</h3>
+              <p class="text-gray-400">Secure Solutions LLC</p>
+            </div>
+          </div>
+          <div class="flex justify-between">
+            <p>2016 &mdash; 2020</p>
+            <div class="text-right">
+              <h3 class="font-bold">B.S. in Computer Science</h3>
+              <p class="text-gray-400">University of North Carolina at Charlotte</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Years of Experience -->
+      <div class="lg:col-span-1 bg-gray-800 p-6 rounded-lg">
+        <h2 class="text-gray-400">Years of Experience</h2>
+        <p class="text-5xl font-bold mt-4">5+</p>
+      </div>
+
+      <!-- CV -->
+      <div class="lg:col-span-1 bg-gray-800 p-6 rounded-lg flex flex-col items-center justify-center">
+        <h2 class="text-gray-400 mb-4">CV</h2>
+        <a href="/Apurva-Patel-Resume.pdf" download class="bg-gray-700 py-3 px-6 rounded-lg hover:bg-gray-600 transition">Download Resume</a>
+      </div>
+
+    </main>
+  </div>
+  <script>
+    function setDate() {
+      const now = new Date();
+
+      // Analog clock
+      const seconds = now.getSeconds();
+      const secondsDegrees = ((seconds / 60) * 360) + 90;
+      const secondHand = document.querySelector('.second-hand');
+      if (secondHand) {
+        secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
+      }
+
+      const mins = now.getMinutes();
+      const minsDegrees = ((mins / 60) * 360) + ((seconds/60)*6) + 90;
+      const minuteHand = document.querySelector('.minute-hand');
+      if (minuteHand) {
+        minuteHand.style.transform = `rotate(${minsDegrees}deg)`;
+      }
+
+      const hour = now.getHours();
+      const hourDegrees = ((hour / 12) * 360) + ((mins/60)*30) + 90;
+      const hourHand = document.querySelector('.hour-hand');
+      if (hourHand) {
+        hourHand.style.transform = `rotate(${hourDegrees}deg)`;
+      }
+
+      // Digital clock
+      let hours = now.getHours();
+      const minutes = String(now.getMinutes()).padStart(2, '0');
+      const ampm = hours >= 12 ? 'PM' : 'AM';
+      hours = hours % 12;
+      hours = hours ? hours : 12; // the hour '0' should be '12'
+      const digitalClock = document.getElementById('digital-clock');
+      if (digitalClock) {
+        digitalClock.textContent = `${hours}:${minutes} ${ampm}`;
+      }
+    }
+
+    setInterval(setDate, 1000);
+    setDate();
+  </script>
+</body>
+
+<%- include('partials/footer') %>
